@@ -1,0 +1,23 @@
+syntax on
+filetype plugin indent on
+colorscheme ron
+
+set encoding=utf-8 " Change how vim represents characters on the screen
+set fileencoding=utf-8 " Set the encoding of files written
+set number
+set hlsearch
+set incsearch
+set smartcase
+set autoindent
+set ignorecase
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set undofile " Maintain undo history between sessions
+set undodir=~/.vim/undodir " Store undofile
+
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
+" ts - show existing tab with 4 spaces width
+" sw - when indenting with '>', use 4 spaces width
+" sts - control <tab> and <bs> keys to match tabstop
